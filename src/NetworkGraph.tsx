@@ -23,6 +23,7 @@ class NetworkGraph extends Component {
             .attr("height", (d:number, i:number) => d * 10)
             .attr("fill", "green");
     }
+
     render() {
         return <svg></svg>
     }
