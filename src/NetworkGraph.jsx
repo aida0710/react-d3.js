@@ -65,16 +65,21 @@ class NetworkGraph extends Component {
                 .on("drag", dragged)
                 .on("end", dragended)
             )
+            //ノードにマウスが乗った時の処理
             .on("mouseover", function (e) {
                 console.log("ホバーしたよ");
             })
+            //ノードからマウスが離れた時の処理
             .on("mouseout", function (e) {
                 console.log("離れたよ");
             })
+            //ノードをクリックした時の処理
             .on("click", function (e) {
                 console.log("クリックしたよ");
             });
 
+        //ノードにマウスが長時間乗った際に表示されるテキスト
+        //以下の例ではノードの名前が表示される(dataのid)
         node.append("title")
             .text(function (d) {
                     return d.id;
