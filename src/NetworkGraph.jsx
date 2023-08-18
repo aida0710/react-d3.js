@@ -14,8 +14,7 @@ class NetworkGraph extends Component {
         const height = 1200;
 
         const svg = d3
-            .select("body")
-            .append("svg")
+            .select("svg")
             .attr("width", width)
             .attr("height", height);
 
